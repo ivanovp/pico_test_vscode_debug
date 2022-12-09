@@ -1,5 +1,6 @@
 # pico_test_vscode_debug
-Raspberry Pi Pico example which can be debugged under VSCode using Picoprobe.
+This is an example project which shows how to debug Raspberry Pi Pico
+under VSCode using Picoprobe.
 This document references package names of Arch Linux, on other OSs they will
 be called differently and different commands might be needed to for installation...
 
@@ -16,7 +17,7 @@ $ lsusb -d 2e8a:
 Bus 001 Device 049: ID 2e8a:000c Raspberry Pi Picoprobe CMSIS-DAP
 ```
 
-# Connecting Picoprobe to Raspberry Pi
+# Connecting Picoprobe to Raspberry Pi Pico
 See picture in Appendix A of Getting started with Pico:
 https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 

@@ -16,9 +16,14 @@
             "configFiles": [
                 "interface/cmsis-dap.cfg",
                 "target/rp2040.cfg"
+                //"${workspaceFolder}/rp2040.cfg"
             ],
             "svdFile": "${env:PICO_SDK_PATH}/src/rp2040/hardware_regs/rp2040.svd",
-            "runToMain": true,
+            // "runToMain": true,
+            "postStartSessionCommands": [
+                "break main",
+                "continue"
+            ]
             // Work around for stopping at main on restart
             "postRestartCommands": [
                 "break main",

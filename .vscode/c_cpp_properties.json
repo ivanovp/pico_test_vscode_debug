@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${PICO_SDK_PATH}/src/rp2_common/pico_stdio/include/**",
+                "${PICO_SDK_PATH}/src/common/pico_stdlib/include/**",
+                "${PICO_SDK_PATH}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/sbin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

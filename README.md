@@ -2,15 +2,15 @@
 This is an example project which shows how to debug Raspberry Pi Pico
 under VSCode using Picoprobe.
 This document references package names of Arch Linux, on other OSs they will
-be called differently and different commands might be needed to for installation...
+be called differently and different commands might be needed for installation...
 
-You need two Raspberry Pi Pico boards: one will be used as debugger (Picoprobe) the
-other will be the device which can be debugged.
+You need two Raspberry Pi Pico boards to use this project: one will be used 
+as debugger (Picoprobe) the other will be the device which can be debugged.
 
 # Creating Picoprobe debugger
-Press BOOTSEL button then connect USB to the computer. A mass storage device
-will appear, copy 'picoprobe.uf2' to this device. It will flash the firmware and
-appear as CMSIS-DAP device:
+Press BOOTSEL button on one Pico then connect it via a USB cable to the computer.
+A mass storage device will appear, copy 'picoprobe.uf2' to this device. It will 
+flash the firmware and appear as CMSIS-DAP device:
 
 ```
 $ lsusb -d 2e8a:
@@ -18,7 +18,7 @@ Bus 001 Device 049: ID 2e8a:000c Raspberry Pi Picoprobe CMSIS-DAP
 ```
 
 # Connecting Picoprobe to Raspberry Pi Pico
-See picture in Appendix A of Getting started with Pico:
+See picture in Appendix A of Getting started with Pico how to connect the wires:
 https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 
 List of connections to be made:
@@ -37,8 +37,8 @@ $ yay raspberry-pico-sdk-git
 ```
 
 # Install openocd-picoprobe
-You need different version of OpenOCD which is adapted for Picoprobe.
-On Arch Linux the package is called openocd-picoprobe which can be found in AUR.
+You need a different version of OpenOCD which is adapted for Picoprobe.
+On Arch Linux the package is called openocd-picoprobe and it can be found in AUR.
 
 ```
 $ yay openocd-picoprobe
